@@ -1,0 +1,10 @@
+{
+  "name": "minimal-sass-browser-sync",
+  "version": "0.0.0",
+  "description": "A sandbox to play with gulp, Sass and browser-sync.",
+  "dependencies": {
+    "gulp": "^3.8.6",
+    "browser-sync": "^1.2.1",
+    "gulp-sass": "^0.7.2"
+  }
+}
