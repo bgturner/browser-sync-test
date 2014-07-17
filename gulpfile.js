@@ -15,7 +15,7 @@ gulp.task('browser-sync', function () {
 
 // Setup Sass to run when any Scss file changes, updating browsers after completion
 gulp.task('sass', function () {
-  gulp.src('site/scss/styles.scss')
+  gulp.src('site/scss/**/*.scss')
     .pipe(sass({
       noCache: true,
       style: "expanded",
@@ -26,6 +26,6 @@ gulp.task('sass', function () {
 });
 
 gulp.task('default', ['sass', 'browser-sync'], function () {
-  gulp.watch("site/scss/*.scss", ['sass']);
+  gulp.watch("site/scss/**/*.scss", ['sass']);
   gulp.watch(['site/**/*.html'], reload);
 });
