@@ -9,7 +9,7 @@ gulp.task('browser-sync', function () {
     notify: false,
     server: {
       baseDir: ['site']
-    },
+    }
   });
 });
 
